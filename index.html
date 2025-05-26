@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFM - TimeOverflow: Sistema de Alianzas Interorganizacionales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Indicator -->
+    <div class="progress-indicator">
+        <div class="progress-fill-indicator"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#inicio" class="nav-brand">
+                <i class="fas fa-clock"></i>
+                TFM TimeOverflow
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#video" class="nav-link">Presentación</a></li>
+                <li><a href="#motivacion" class="nav-link">Motivación</a></li>
+                <li><a href="#desarrollo" class="nav-link">Desarrollo</a></li>
+                <li><a href="#decisiones" class="nav-link">Decisiones</a></li>
+                <li><a href="#conclusiones" class="nav-link">Conclusiones</a></li>
+                <li>
+                    <button class="theme-toggle" aria-label="Cambiar tema">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+                <h1>Sistema de Alianzas Interorganizacionales para TimeOverflow</h1>
+                <p class="hero-subtitle">
+                    Transformando bancos de tiempo aislados en un ecosistema colaborativo interconectado 
+                    mediante el desarrollo de funcionalidades avanzadas de alianzas y transferencias interbancarias.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Pull Requests</span>
+                    </div>     
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Funcionalidades</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Código Abierto</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#video" class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        Ver Presentación
+                    </a>
+                    <a href="https://github.com/gmartincor/deploy_timeoverflow/tree/maps-interog" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i>
+                        Ver Código
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in">
+                <svg class="hero-image" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Central node -->
+                    <circle cx="200" cy="200" r="40" fill="url(#gradient1)" opacity="0.9"/>
+                    <text x="200" y="210" text-anchor="middle" fill="white" font-size="12" font-weight="bold">TimeOverflow</text>
+                    
+                    <!-- Surrounding nodes -->
+                    <circle cx="100" cy="100" r="30" fill="#3b82f6" opacity="0.7"/>
+                    <text x="100" y="105" text-anchor="middle" fill="white" font-size="10">Banco A</text>
+                    
+                    <circle cx="300" cy="100" r="30" fill="#3b82f6" opacity="0.7"/>
+                    <text x="300" y="105" text-anchor="middle" fill="white" font-size="10">Banco B</text>
+                    
+                    <circle cx="100" cy="300" r="30" fill="#3b82f6" opacity="0.7"/>
+                    <text x="100" y="305" text-anchor="middle" fill="white" font-size="10">Banco C</text>
+                    
+                    <circle cx="300" cy="300" r="30" fill="#3b82f6" opacity="0.7"/>
+                    <text x="300" y="305" text-anchor="middle" fill="white" font-size="10">Banco D</text>
+                    
+                    <!-- Connections -->
+                    <line x1="160" y1="160" x2="130" y2="130" stroke="#2563eb" stroke-width="2" opacity="0.5"/>
+                    <line x1="240" y1="160" x2="270" y2="130" stroke="#2563eb" stroke-width="2" opacity="0.5"/>
+                    <line x1="160" y1="240" x2="130" y2="270" stroke="#2563eb" stroke-width="2" opacity="0.5"/>
+                    <line x1="240" y1="240" x2="270" y2="270" stroke="#2563eb" stroke-width="2" opacity="0.5"/>
+                    
+                    <!-- Inter-bank connections -->
+                    <line x1="130" y1="120" x2="270" y2="120" stroke="#059669" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+                    <line x1="130" y1="280" x2="270" y2="280" stroke="#059669" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="video-section">
+        <div class="video-container">
+            <div class="video-header">
+                <h2 class="video-title">Presentación del Proyecto</h2>
+                <div class="video-meta">
+                    <span><i class="fas fa-user"></i> Guillermo Martín Correa</span>
+                    <span><i class="fas fa-calendar"></i>  2025</span>
+                </div>
+            </div>
+            <div class="video-wrapper">
+                <video id="presentationVideo" controls>
+                    <source src="presentacion-tfm.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+            <div class="video-controls">
+                <button class="btn btn-secondary" id="playPauseBtn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <div class="video-progress">
+                    <div class="progress-bar" id="progressBar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+                <span id="timeDisplay">00:00 / 20:00</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motivación Section -->
+    <section id="motivacion" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Motivación del Proyecto</h2>
+                <p class="section-subtitle">
+                    Por qué elegí contribuir a TimeOverflow y desarrollar un sistema de alianzas interorganizacionales
+                </p>
+            </div>
+            
+            <div class="features-container">
+                <div class="features-list">
+                    <div class="feature-item fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Impacto Social Real</h3>
+                            <p>TimeOverflow facilita la gestión de bancos de tiempo, promoviendo la economía colaborativa y el intercambio equitativo de servicios en comunidades reales.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Contribución al Código Abierto</h3>
+                            <p>La oportunidad de contribuir a un proyecto activo con más de 8.000 usuarios, aplicando conocimientos técnicos para resolver problemas reales.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Solución a una Limitación Crítica</h3>
+                            <p>Los bancos de tiempo funcionaban como islas aisladas. Mi propuesta permite la interconexión, multiplicando las oportunidades de intercambio.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Alineación con los ODS</h3>
+                            <p>El proyecto contribuye directamente a los Objetivos de Desarrollo Sostenible 10, 11 y 12, promoviendo comunidades más equitativas y sostenibles.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <img src="data:image/svg+xml,%3Csvg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='50' y='50' width='100' height='80' fill='%232563eb' rx='10' opacity='0.8'/%3E%3Ctext x='100' y='95' text-anchor='middle' fill='white' font-size='14' font-weight='bold'%3EBanco A%3C/text%3E%3Crect x='250' y='50' width='100' height='80' fill='%232563eb' rx='10' opacity='0.8'/%3E%3Ctext x='300' y='95' text-anchor='middle' fill='white' font-size='14' font-weight='bold'%3EBanco B%3C/text%3E%3Crect x='50' y='170' width='100' height='80' fill='%232563eb' rx='10' opacity='0.8'/%3E%3Ctext x='100' y='215' text-anchor='middle' fill='white' font-size='14' font-weight='bold'%3EBanco C%3C/text%3E%3Crect x='250' y='170' width='100' height='80' fill='%232563eb' rx='10' opacity='0.8'/%3E%3Ctext x='300' y='215' text-anchor='middle' fill='white' font-size='14' font-weight='bold'%3EBanco D%3C/text%3E%3Cline x1='150' y1='90' x2='250' y2='90' stroke='%23059669' stroke-width='3' stroke-dasharray='5,5'/%3E%3Cline x1='100' y1='130' x2='100' y2='170' stroke='%23059669' stroke-width='3' stroke-dasharray='5,5'/%3E%3Cline x1='300' y1='130' x2='300' y2='170' stroke='%23059669' stroke-width='3' stroke-dasharray='5,5'/%3E%3Cline x1='150' y1='210' x2='250' y2='210' stroke='%23059669' stroke-width='3' stroke-dasharray='5,5'/%3E%3C/svg%3E" 
+                         alt="Diagrama de interconexión de bancos" 
+                         class="features-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desarrollo Section -->
+    <section id="desarrollo" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Desarrollo del Proyecto</h2>
+                <p class="section-subtitle">
+                    Evolución, hitos importantes y desafíos encontrados durante el desarrollo
+                </p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Fase 1 - Análisis</div>
+                        <h3 class="timeline-title">Estudio del Código Fuente</h3>
+                        <p>Análisis exhaustivo de la arquitectura MVC de TimeOverflow, identificación del modelo multi-tenant y comprensión del sistema contable existente.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Fase 2 - Diseño</div>
+                        <h3 class="timeline-title">Conceptualización del Sistema</h3>
+                        <p>Diseño del modelo de alianzas interorganizacionales y propuesta inicial a la comunidad mediante issue #789.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Fase 3 - Implementación</div>
+                        <h3 class="timeline-title">Desarrollo de Funcionalidades</h3>
+                        <p>Implementación de 4 Pull Requests principales: sistema de alianzas, filtrado de visibilidad, transferencias interbancarias y contacto entre usuarios.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Fase 4 - Expansión</div>
+                        <h3 class="timeline-title">Funcionalidades Adicionales</h3>
+                        <p>Desarrollo del mapa geoespacial y sistema de estadísticas en repositorio derivado tras divergencias con los coordinadores principales.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3 class="card-title">Problemas Encontrados</h3>
+                    <p class="card-description">
+                        Infraestructura desactualizada en producción, limitada interacción con coordinadores, 
+                        y divergencias sobre el alcance de las funcionalidades propuestas.
+                    </p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="card-title">Soluciones Adoptadas</h3>
+                    <p class="card-description">
+                        Creación de repositorio derivado, despliegue independiente en Render, 
+                        y adaptación de la arquitectura para soportar todas las funcionalidades diseñadas.
+                    </p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="card-title">Logros Alcanzados</h3>
+                    <p class="card-description">
+                        Sistema completamente funcional de alianzas, reconocimiento como coordinador del repositorio, 
+                        y carta de agradecimiento de la ADBdT.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Decisiones Section -->
+    <section id="decisiones" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Decisiones Técnicas y Estratégicas</h2>
+                <p class="section-subtitle">
+                    Análisis de las decisiones clave que moldearon el proyecto
+                </p>
+            </div>
+            
+            <div class="challenges-container">
+                <div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--primary-color);">
+                        Decisiones Arquitectónicas
+                    </h3>
+                    
+                    <div class="challenge-item">
+                        <h4 class="challenge-title">Extensión vs. Reescritura</h4>
+                        <p class="challenge-solution">
+                            Decisión de extender el modelo existente en lugar de crear un sistema paralelo, 
+                            manteniendo la coherencia arquitectónica y facilitando la integración.
+                        </p>
+                    </div>
+                    
+                    <div class="challenge-item">
+                        <h4 class="challenge-title">Modelo de Transferencias en Tres Pasos</h4>
+                        <p class="challenge-solution">
+                            Implementación de transferencias interbancarias mediante tres movimientos contables 
+                            para garantizar trazabilidad completa y mantener la autonomía de cada banco.
+                        </p>
+                    </div>
+                    
+                    <div class="challenge-item">
+                        <h4 class="challenge-title">Integración de Leaflet.js</h4>
+                        <p class="challenge-solution">
+                            Selección de Leaflet con OpenStreetMap para la visualización geoespacial, 
+                            priorizando el código abierto y evitando dependencias de servicios propietarios.
+                        </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--secondary-color);">
+                        Decisiones de Proceso
+                    </h3>
+                    
+                    <div class="challenge-item">
+                        <h4 class="challenge-title">Metodología Ágil Adaptativa</h4>
+                        <p class="challenge-solution">
+                            Uso de Scrum con sprints flexibles para adaptarse a la dinámica del código abierto 
+                            y los tiempos variables de respuesta de la comunidad.
+                        </p>
+                    </div>
+                    
+                    <div class="challenge-item">
+                        <h4 class="challenge-title">Fork del Repositorio</h4>
+                        <p class="challenge-solution">
+                            Creación de repositorio derivado para implementar funcionalidades adicionales 
+                            sin comprometer la visión del proyecto principal.
+                        </p>
+                    </div>
+                    
+                    <div class="challenge-item">
+                        <h4 class="challenge-title">Despliegue en Render</h4>
+                        <p class="challenge-solution">
+                            Elección de Render como plataforma de despliegue por su integración con GitHub 
+                            y capacidad de alojar aplicaciones Rails gratuitamente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-header" style="margin-top: 4rem;">
+                <h3 class="section-title" style="font-size: 1.8rem;">Stack Tecnológico</h3>
+            </div>
+            
+            <div class="tech-stack">
+                <span class="tech-item">Ruby on Rails</span>
+                <span class="tech-item">PostgreSQL</span>
+                <span class="tech-item">JavaScript</span>
+                <span class="tech-item">Leaflet.js</span>
+                <span class="tech-item">OpenStreetMap</span>
+                <span class="tech-item">Highcharts</span>
+                <span class="tech-item">Bootstrap</span>
+                <span class="tech-item">JQuery</span>
+                <span class="tech-item">Git</span>
+                <span class="tech-item">GitHub</span>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de Desarrollo -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proceso de Desarrollo</h2>
+                <p class="section-subtitle">
+                    Flujo de trabajo implementado para la contribución
+                </p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step fade-in">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Análisis</h3>
+                    <p class="step-description">Estudio del código fuente y arquitectura existente</p>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Propuesta</h3>
+                    <p class="step-description">Creación de issue con diseño detallado</p>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Desarrollo</h3>
+                    <p class="step-description">Implementación y pruebas unitarias</p>
+                </div>
+                
+                <div class="process-step fade-in">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Pull Request</h3>
+                    <p class="step-description">Revisión y ajustes según feedback</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impacto Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Impacto del Proyecto</h2>
+                <p class="section-subtitle">
+                    Contribución a los Objetivos de Desarrollo Sostenible
+                </p>
+            </div>
+            
+            <div class="impact-grid">
+                <div class="impact-card fade-in">
+                    <div class="impact-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <div class="impact-number">ODS 11</div>
+                    <div class="impact-label">Ciudades y Comunidades Sostenibles</div>
+                </div>
+                
+                <div class="impact-card fade-in">
+                    <div class="impact-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <div class="impact-number">ODS 12</div>
+                    <div class="impact-label">Producción y Consumo Responsables</div>
+                </div>
+                
+                <div class="impact-card fade-in">
+                    <div class="impact-icon">
+                        <i class="fas fa-equals"></i>
+                    </div>
+                    <div class="impact-number">ODS 10</div>
+                    <div class="impact-label">Reducción de las Desigualdades</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusiones Section -->
+    <section id="conclusiones" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Conclusiones y Trabajo Futuro</h2>
+                <p class="section-subtitle">
+                    Reflexiones finales y perspectivas de evolución del proyecto
+                </p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="card-title">Objetivos Alcanzados</h3>
+                    <p class="card-description">
+                        Sistema funcional de alianzas y sistema de transferencias interorganizacionales implementado,
+                        reconocimiento como coordinador del repositorio y carta de agradecimiento de la ADBdT.
+                    </p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="card-title">Aprendizajes Clave</h3>
+                    <p class="card-description">
+                        Experiencia real en código abierto, gestión de expectativas en proyectos colaborativos, 
+                        adaptación a circunstancias cambiantes y desarrollo autónomo de soluciones.
+                    </p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="card-title">Evolución Futura</h3>
+                    <p class="card-description">
+                        Sistema de recomendación de alianzas mediante IA, mecanismos de resolución de conflictos, 
+                        API para integración con otros sistemas y expansión a nivel internacional.
+                    </p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 4rem; text-align: center;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--primary-color);">
+                    Áreas del Máster Especialmente Útiles
+                </h3>
+                <div class="features-list" style="max-width: 800px; margin: 0 auto;">
+                    <div class="feature-item fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Desarrollo Web Avanzado</h3>
+                            <p>Aplicación práctica de arquitecturas MVC e integración de Frameworks y librerias modernas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Gestión de Proyectos</h3>
+                            <p>Aplicación de metodologías ágiles en entornos reales de desarrollo colaborativo, caracterizada por la flexibilidad, ciclos de trabajo breves, comunicación entre los miembros del equipo y la entrega continua de productos con valor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Trabajo Final de Máster</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                Máster en Desarrollo de Sitios y Aplicaciones Web - UOC
+            </p>
+            
+            <div class="footer-links">
+                <a href="https://github.com/coopdevs/timeoverflow" target="_blank">TimeOverflow Original</a>
+                <a href="https://github.com/gmartincor/deploy_timeoverflow/tree/map-filters" target="_blank">Mi Contribución</a>
+                <a href="https://deploy-timeoverflow.onrender.com" target="_blank">Sitio Web</a>
+                <a href="https://adbdt.org" target="_blank">ADBdT</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://github.com/gmartincor" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/guillermo-martin-correa-b623b0134" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:guillermomc007@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2025 Guillermo Martín Correa. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
