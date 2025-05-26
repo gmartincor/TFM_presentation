@@ -27,7 +27,7 @@
             </a>
             <ul class="nav-menu">
                 <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-                <li><a href="#video" class="nav-link">Presentación</a></li>
+                <li><a href="#contexto" class="nav-link">Contexto</a></li>
                 <li><a href="#motivacion" class="nav-link">Motivación</a></li>
                 <li><a href="#desarrollo" class="nav-link">Desarrollo</a></li>
                 <li><a href="#decisiones" class="nav-link">Decisiones</a></li>
@@ -68,9 +68,9 @@
                     </div>
                 </div>
                 <div class="hero-actions">
-                    <a href="#video" class="btn btn-primary">
-                        <i class="fas fa-play"></i>
-                        Ver Presentación
+                    <a href="#contexto" class="btn btn-primary">
+                        <i class="fas fa-info-circle"></i>
+                        Conocer el Contexto
                     </a>
                     <a href="https://github.com/gmartincor/deploy_timeoverflow/tree/maps-interog" target="_blank" class="btn btn-secondary">
                         <i class="fab fa-github"></i>
@@ -117,32 +117,174 @@
         </div>
     </section>
 
-    <!-- Video Section -->
-    <section id="video" class="video-section">
-        <div class="video-container">
-            <div class="video-header">
-                <h2 class="video-title">Presentación del Proyecto</h2>
-                <div class="video-meta">
-                    <span><i class="fas fa-user"></i> Guillermo Martín Correa</span>
-                    <span><i class="fas fa-calendar"></i>  2025</span>
-                </div>
+    <!-- Contexto Section -->
+    <section id="contexto" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contexto: Los Bancos de Tiempo</h2>
+                <p class="section-subtitle">
+                    Comprendiendo el ecosistema de intercambio temporal que TimeOverflow gestiona
+                </p>
             </div>
-            <div class="video-wrapper">
-                <video id="presentationVideo" controls>
-                    <source src="presentacion-tfm.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                </video>
-            </div>
-            <div class="video-controls">
-                <button class="btn btn-secondary" id="playPauseBtn">
-                    <i class="fas fa-play"></i>
-                </button>
-                <div class="video-progress">
-                    <div class="progress-bar" id="progressBar">
-                        <div class="progress-fill" id="progressFill"></div>
+            
+            <!-- Conceptos fundamentales -->
+            <div class="context-concepts">
+                <div class="concept-item fade-in">
+                    <div class="concept-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="concept-content">
+                        <h3>El Tiempo como Moneda</h3>
+                        <p>En los bancos de tiempo, la unidad de intercambio no es el dinero sino las horas. Una hora de enseñanza de inglés equivale exactamente a una hora de cualquier otro servicio, democratizando el valor del tiempo independientemente de la naturaleza del trabajo realizado.</p>
                     </div>
                 </div>
-                <span id="timeDisplay">00:00 / 20:00</span>
+                
+                <div class="concept-item fade-in">
+                    <div class="concept-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Intercambio de Servicios</h3>
+                        <p>Las personas ofrecen sus habilidades y conocimientos a la comunidad, creando un ecosistema de apoyo mutuo basado en la reciprocidad. Desde cuidado de niños hasta reparaciones domésticas, cada servicio tiene el mismo valor temporal.</p>
+                    </div>
+                </div>
+                
+                <div class="concept-item fade-in">
+                    <div class="concept-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="concept-content">
+                        <h3>Fortalecimiento Comunitario</h3>
+                        <p>Más allá del intercambio económico alternativo, los bancos de tiempo construyen redes sociales sólidas, fortalecen el tejido comunitario local y promueven la inclusión social mediante la valoración equitativa de todas las contribuciones.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ejemplo visual de intercambio -->
+            <div class="exchange-demonstration">
+                <div class="exchange-card fade-in">
+                    <div class="exchange-header">
+                        <h3>Ejemplo de Intercambio</h3>
+                        <p>Funcionamiento típico en un banco de tiempo</p>
+                    </div>
+                    <div class="exchange-flow">
+                        <div class="exchange-participant">
+                            <div class="participant-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="participant-info">
+                                <h4>María</h4>
+                                <p>Ofrece clases de música</p>
+                            </div>
+                        </div>
+                        
+                        <div class="exchange-arrow">
+                            <div class="time-indicator">
+                                <i class="fas fa-exchange-alt"></i>
+                                <span>1 hora</span>
+                            </div>
+                        </div>
+                        
+                        <div class="exchange-participant">
+                            <div class="participant-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="participant-info">
+                                <h4>Carlos</h4>
+                                <p>Repara bicicletas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problema y Solución Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">El Desafío Identificado</h2>
+                <p class="section-subtitle">
+                    La limitación fundamental que motivó el desarrollo de este TFM
+                </p>
+            </div>
+            
+            <div class="problem-solution-container">
+                <!-- Problema -->
+                <div class="problem-section fade-in">
+                    <h3 class="subsection-title">Comunidades Aisladas</h3>
+                    <div class="isolation-illustration">
+                        <div class="isolated-bank">
+                            <div class="bank-visual">
+                                <i class="fas fa-building"></i>
+                                <span>Banco A</span>
+                            </div>
+                            <div class="bank-members">
+                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="barrier">
+                            <div class="barrier-line"></div>
+                            <span class="barrier-label">Aislamiento</span>
+                        </div>
+                        
+                        <div class="isolated-bank">
+                            <div class="bank-visual">
+                                <i class="fas fa-building"></i>
+                                <span>Banco B</span>
+                            </div>
+                            <div class="bank-members">
+                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Tradicionalmente, los bancos de tiempo funcionaban como islas independientes. Los miembros solo podían intercambiar servicios dentro de su propio banco, desaprovechando el potencial de una red más amplia de habilidades y recursos disponibles en otras comunidades cercanas.</p>
+                </div>
+                
+                <!-- Solución -->
+                <div class="solution-section fade-in">
+                    <h3 class="subsection-title">Ecosistema Interconectado</h3>
+                    <div class="connection-illustration">
+                        <div class="connected-bank">
+                            <div class="bank-visual">
+                                <i class="fas fa-building"></i>
+                                <span>Banco A</span>
+                            </div>
+                            <div class="bank-members">
+                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="connection">
+                            <div class="connection-line"></div>
+                            <div class="connection-icon">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <span class="connection-label">Alianza</span>
+                        </div>
+                        
+                        <div class="connected-bank">
+                            <div class="bank-visual">
+                                <i class="fas fa-building"></i>
+                                <span>Banco B</span>
+                            </div>
+                            <div class="bank-members">
+                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Mi solución permite establecer alianzas formales entre bancos de tiempo, creando una red colaborativa donde los miembros pueden acceder a un catálogo ampliado de servicios y realizar transferencias seguras de tiempo entre organizaciones aliadas.</p>
+                </div>
             </div>
         </div>
     </section>
